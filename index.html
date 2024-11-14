@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesla</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="header" id="header">
+        <nav>
+            <img src="./converse-logo.png" alt="" class="logo">
+            <ul>
+                <li><a href="#" id="models"> Run Star Trainer Verde</a></li>
+                <li><a href="#" id="model3"> One Star Academy Pro</a></li>
+                <li><a href="#" id="modelx"> Chuck Taylor All White</a></li>
+                <li><a href="#" id="modely"> Garden Starter Waxed Canvas</a></li>
+            </ul>
+            <a href="#" class="btn">Reserve Now</a>
+        </nav>
+        <div class="info">
+            <div>
+                <h2 id="seg">R$ 499,90</h2>
+                <p>Preço</p>
+            </div>
+            <div>
+                <h2 id="mph">Unisex Cano Baixo</h2>
+                <p>Categoria</p>
+            </div>
+            <div>
+                <h2 id="mi">Star Chevron</h2>
+                <p>Legado</p>
+            </div>
+            <div class="line"></div>
+            <div>
+                <h2 id="model">Model S</h2>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    let header = document.getElementById('header')
+    let ms = document.getElementById('models')
+    let m3 = document.getElementById('model3')
+    let mx = document.getElementById('modelx')
+    let my = document.getElementById('modely')
+    let model = document.getElementById('model')
+    let seg = document.getElementById('seg')
+    let mph = document.getElementById('mph')
+    let mi = document.getElementById('mi')
+
+    ms.onclick = function(){
+        header.style.backgroundImage = "url(./tenis1.png)"
+        model.innerHTML = "Run Star Trainer verde"
+        srg.innerHTML = "R$ 499,90"
+        mph.innerHTML ="Unisex Cano Baixo"
+        mi.innerHTML = "NIGHT INDIGO/EGRET/WHITE"
+    }
+
+    m3.onclick = function(){
+        header.style.backgroundImage = "url(./tenis2.png)"
+        model.innerHTML = "One Star Academy Pro"
+        srg.innerHTML = "R$ 520,00"
+        mph.innerHTML ="Unisex Cano Baixo"
+        mi.innerHTML = "QUANTUM VIOLET/EGRET/WHITE"
+    }
+    mx.onclick = function(){
+        header.style.backgroundImage = "url(./tenis3.png)"
+        model.innerHTML = "Chuck Taylor All White"
+        srg.innerHTML = "R$ 290,90"
+        mph.innerHTML ="Unisex Cano Alto"
+        mi.innerHTML = "LOTUS PINK/EGRET/WHITE"
+    }
+    my.onclick = function(){
+        header.style.backgroundImage = "url(./tenis4.png)"
+        model.innerHTML = "Garden Starter Waxed"
+        srg.innerHTML = "R$ 499,90"
+        mph.innerHTML ="Unisex Cano Alto"
+        mi.innerHTML = "NIGHT INDIGO/EGRET/WHITE"
+    }
+</script>
+</html>
